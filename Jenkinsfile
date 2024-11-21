@@ -12,7 +12,7 @@ pipeline {
     stage ('Build') {
       steps {
         sh '''
-        	cd ./maven/simple-war 
+        	cd simple-war 
           cat ./src/main/webapp/index.jsp
         	mvn clean package
         	cd ./target/
