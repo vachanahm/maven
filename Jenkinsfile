@@ -13,7 +13,7 @@ pipeline {
       steps {
         sh '''
         	cd simple-war 
-          cat ./src/main/webapp/index.jsp
+          cat src/main/webapp/index.jsp
         	mvn clean package
         	cd ./target/
         	ls
